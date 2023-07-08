@@ -1,0 +1,119 @@
+# Day5
+1,for the given json  iterate overall for loops (for, for in, for of, for each)
+
+const data = {
+  name: "John",
+  age: 25,
+  city: "New York"
+};
+
+// for loop
+console.log("Using for loop:");
+for (let key in data) {
+  console.log(`${key}: ${data[key]}`);
+}
+
+// for...in loop
+console.log("\nUsing for...in loop:");
+for (let key in data) {
+  if (data.hasOwnProperty(key)) {
+    console.log(`${key}: ${data[key]}`);
+  }
+}
+
+// for...of loop (for arrays)
+console.log("\nUsing for...of loop:");
+const arr = [1, 2, 3, 4, 5];
+for (let element of arr) {
+  console.log(element);
+}
+
+// forEach loop (for arrays)
+console.log("\nUsing forEach loop:");
+arr.forEach((element) => {
+  console.log(element);
+});
+
+2,create your own resume data in JSON format.
+
+{
+  "name": "Ahamed Ibrahim",
+  "address": "1/998-1 14th Bharathinagar, Ramanathapuram-District",
+  "phone": "7708196965",
+  "email": "ahamedi786ibra@gmail.com",
+  "linkedin": "linkedin.com/in/ahamedibi",
+  "objective": "Looking for a challenging role in a reputable organization to utilize my technical, database, and management skills for the growth of the organization as well as to enhance my knowledge about new and emerging trends in the IT sector.",
+  "education": [
+    {
+      "institution": "Mohamed Sathak Polytechnic College / TNDTE DOTE",
+      "degree": "Diploma in Mechanical",
+      "percentage": "70%",
+      "year": "2014-2017"
+    },
+    {
+      "institution": "Tagore Vidyalayam Matric Hr Sec School",
+      "degree": "SSLC",
+      "percentage": "75%",
+      "year": "2013"
+    }
+  ],
+  "skills": [
+    "HTML",
+    "CSS",
+    "Bootstrap",
+    "JavaScript",
+    "React",
+    "Node.js",
+    "MongoDB",
+    "GitHub"
+  ],
+  "projects": [
+    "Tic-Tak-Toe-game: (visit: http://abctesta2.unaux.com/TIC-TAC-TOE/index%20.html) open in chrome browser.",
+    "Power Generation System: Developing a power generation system that efficiently converts the rotational energy from the turbine blades into electrical power. This may involve the selection of suitable generators, power electronics, and control mechanisms to maximize power output and ensure grid compatibility."
+  ],
+  "achievements": [
+    "Codekata",
+    "Webkata",
+    "Hackathon from Guvi Institute"
+  ],
+  "languages": [
+    "Tamil",
+    "English"
+  ],
+  "additionalInformation": [
+    "Attention to detail and strong problem-solving abilities.",
+    "Ability to quickly learn new technologies and adapt to changing environments.",
+    "Strong analytical and critical thinking skills.",
+    "Excellent time management and organizational skills.",
+    "Passion for staying updated with the latest industry trends and technologies."
+  ]
+}
+
+3,read about the difference between window screen , and document in javascript.
+
+1,In JavaScript, the window object and the document object refer to different aspects of a web page:
+
+a.window: The window object represents the browser window or tab that contains the web page. It is the global object in the browser's JavaScript environment and provides methods and properties related to the browser window. Some key aspects of the window object include:
+
+b.Global Scope: Variables and functions declared directly in the global scope are attached to the window object. For example, window.alert() and window.setTimeout().
+
+c.DOM Manipulation: The window object provides methods to interact with the Document Object Model (DOM), such as window.document to access the DOM tree and modify its elements.
+
+d.Browser Properties: It contains properties related to the browser, such as window.location to get the current URL, window.navigator for information about the user's browser and operating system, and window.history to manage the browser's session history.
+
+2,document: The document object represents the web page loaded in the browser window. It provides access to the various elements and content within the web page. Some important aspects of the document object include:
+
+a.DOM Manipulation: The document object allows you to access and modify elements in the web page. For example, you can use document.getElementById() to retrieve an element by its ID, document.createElement() to create new elements, and document.querySelector() to select elements using CSS selectors.
+
+b.Content Manipulation: The document object provides methods to work with the content of the web page, such as document.write() to write content dynamically, document.title to get or set the page title, and document.body to access the <body> element.
+
+c.Event Handling: You can attach event listeners to elements within the document to respond to user interactions, such as clicks or key presses.
+
+In summary, the window object represents the browser window or tab, providing methods and properties related to the browser's environment, while the document object represents the loaded web page, offering methods and properties to access and manipulate the content and elements within that page
+
+
+yes i read
+
+4, codekata practice 
+
+ yes i doing 
